@@ -1,0 +1,5 @@
+PROJECT (COPY)
+SET(SRC_LIST main.cpp copyconstructor.h)
+MESSAGE(STATUS "This is BINARY dir" ${COPY_BINARY_DIR})
+MESSAGE(STATUS "This is SOURCE dir" ${COPY_SOURCE_DIR})
+ADD_EXECUTABLE(copy ${SRC_LIST})
