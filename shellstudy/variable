@@ -1,0 +1,15 @@
+#!/bin/sh
+
+var="Hi man!"
+
+echo $var
+echo "$var"
+echo '$var'
+echo \$var
+
+echo change the var
+read var
+
+echo \$var is  $var
+
+exit 0

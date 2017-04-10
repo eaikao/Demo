@@ -1,0 +1,10 @@
+#!/bin/sh
+
+var="hello"
+
+echo “the program is $0”
+echo “its first parameter is $1”
+echo “its third parameter is $3”
+echo ”its home dicectroy is $HOME“
+exit 0
+
