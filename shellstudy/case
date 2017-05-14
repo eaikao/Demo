@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "请输入yes/no"
+
+read yesorno
+
+case "$yesorno" in
+	[yY] | [yY][eE][sS] )
+		echo "你好"
+		echo "吃了吗？"
+		;;
+	[Nn]* )
+		echo "你们好"
+		;;
+	* )
+		echo "对不起，输入错误"
+		echo "情输入yes 或者 no"
+		exit 1
+		;;
+esac
+
+exit 0
+

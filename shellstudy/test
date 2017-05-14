@@ -1,0 +1,14 @@
+#!/bin/sh
+#对于一个命令需要用空格分开！
+
+if [ -f /bin/bash ]              #使用[表示条件，可以替换为test命令,-f判断该文件是否为一个普通文件
+then
+	echo "file /bin/bash exists"
+fi
+
+if [ -d /bin/bash ]
+then
+	echo "/bin/bash is a directory"
+else
+	echo "/bin/bash is not a directory"
+fi

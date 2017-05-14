@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "enter the password"
+
+read password
+
+while [ "$password" != "123456" ]; do
+
+	echo "please try again"
+	read password
+done
+
+exit 0
+

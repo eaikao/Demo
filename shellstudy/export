@@ -1,0 +1,6 @@
+#!/bin/bash
+
+foo="the first"
+export bar="this is bar"
+
+export1

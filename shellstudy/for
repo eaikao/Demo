@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for file in $( ls e* ); do    #输出当前目录下以字母e为开头的文件
+	echo $file
+done
+
+exit 0

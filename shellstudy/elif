@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Are you Ok? please answer yes or no"
+read ok
+
+if [ "$ok" = "yes" ]                                    #这里的ok需要双引号，防止用户输入回车按键
+then
+	echo "good luck"
+elif [ "$ok" = "no" ]; then
+	echo "you will be ok"
+else
+	echo "Sorry, please enter yes or no"
+
+	exit 1
+fi
+
+exit 0
