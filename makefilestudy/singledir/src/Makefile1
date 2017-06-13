@@ -1,0 +1,8 @@
+mainapp: main.o 1.o 2.o
+	gcc -o mainapp main.o 1.o 2.o
+mian.o: main.c a.h
+	gcc -c main.c
+1.o: 1.c a.h b.h
+	gcc -c 1.c
+2.o: 2.c b.h c.h
+	gcc -c 2.c

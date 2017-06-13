@@ -1,0 +1,32 @@
+all: mainapp
+
+CC = gcc
+
+INSTALLDIR = bin
+
+#DEBUG
+CFLAGS = -I. -g -Wall -ansi
+
+#Release
+#CFLAGS = -I. -O -Wall -ansi
+
+mainapp: main.o 1.o 2.o
+	$(CC) -o mainapp main.o 1.o 2.o
+main.o: main.c a.h
+	$(CC) $(CFLAGS) -c main.c
+1.o: 1.c a.h b.h
+	$(CC) $(CFLAGS) -c 1.c
+2.o: 2.c b.h c.h
+	$(CC) $(CFLAGS) -c 2.c
+
+clean:
+	-rm mainapp main.o 1.o 2.o     #忽略rm的执行结果
+install: 
+	@if [ -d $(INSTALLDIR) ]; \
+	then \
+		cp mainapp $(INSTALLDIR); \
+		chmod a+x $(INSTALLDIR)/mainapp; \
+		echo "Installed in $(INSTALLDIR)"; \
+	else \
+		echo "the $(INSTALLDIR) doesn't exist, please check!";\
+	fi 
