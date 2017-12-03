@@ -1,0 +1,7 @@
+hello i_fd
+hello world
+hello dup2
+hello, you are beautiful
+i love you!
+see you!
+
