@@ -1,0 +1,2 @@
+Project(USEHELLO)
+ADD_SUBDIRECTORY(source)

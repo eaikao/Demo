@@ -1,14 +1,17 @@
 /*************************************************************************
-    > File Name: hello.cpp
+    > File Name: main.c
     > Author: eaikao
     > Mail: 279712302@qq.com 
-    > Created Time: 2017年12月24日 星期日 22时52分07秒
+    > Created Time: 2018年01月01日 星期一 17时59分44秒
  ************************************************************************/
+
 #include <stdio.h>
-#include <iostream>
 #include "hello.h"
 
-void HelloFunc()
+
+int main()
 {
-	printf("hello world\n");
+	HelloFunc();
+
+	return 0;
 }
